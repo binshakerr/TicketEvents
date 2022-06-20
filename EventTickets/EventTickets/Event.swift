@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Event: Decodable {
+struct Event: Decodable, Hashable {
     let id: String
     let city: String
     let artist: String

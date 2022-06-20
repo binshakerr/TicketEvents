@@ -10,13 +10,21 @@ import SwiftUI
 struct EventsView: View {
     
     @ObservedObject var viewModel: EventViewModel
+    private let columns = [GridItem(.flexible(minimum: 80), spacing: 10, alignment: .leading)]
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-            .navigationTitle("Events")
-            .onAppear{
-                viewModel.loadEvents()
+        ScrollView {
+            LazyVGrid(columns: columns, alignment: .leading, spacing: 20) {
+                ForEach(viewModel.events, id: \.self) { event in
+                    EventCellView(event: event)
+                }
             }
+        }
+        .padding()
+        .navigationTitle("Events")
+        .onAppear{
+            viewModel.loadEvents()
+        }
     }
 }
 

@@ -15,6 +15,7 @@
 		DCA8E8502860740800FE9173 /* EventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA8E84F2860740800FE9173 /* EventsView.swift */; };
 		DCA8E8522860741600FE9173 /* EventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA8E8512860741600FE9173 /* EventViewModel.swift */; };
 		DCA8E8542860742500FE9173 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA8E8532860742500FE9173 /* Event.swift */; };
+		DCA8E8562860768600FE9173 /* EventCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA8E8552860768600FE9173 /* EventCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		DCA8E84F2860740800FE9173 /* EventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsView.swift; sourceTree = "<group>"; };
 		DCA8E8512860741600FE9173 /* EventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewModel.swift; sourceTree = "<group>"; };
 		DCA8E8532860742500FE9173 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		DCA8E8552860768600FE9173 /* EventCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				DCA8E84F2860740800FE9173 /* EventsView.swift */,
 				DCA8E8512860741600FE9173 /* EventViewModel.swift */,
 				DCA8E8532860742500FE9173 /* Event.swift */,
+				DCA8E8552860768600FE9173 /* EventCellView.swift */,
 			);
 			path = EventTickets;
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCA8E84E2860739800FE9173 /* JsonReader.swift in Sources */,
+				DCA8E8562860768600FE9173 /* EventCellView.swift in Sources */,
 				DCA8E83D2860725A00FE9173 /* EventTicketsApp.swift in Sources */,
 				DCA8E8522860741600FE9173 /* EventViewModel.swift in Sources */,
 				DCA8E8542860742500FE9173 /* Event.swift in Sources */,
