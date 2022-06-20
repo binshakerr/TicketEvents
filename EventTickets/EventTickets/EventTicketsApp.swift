@@ -11,7 +11,10 @@ import SwiftUI
 struct EventTicketsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                let viewModel = EventViewModel()
+                EventsView(viewModel: viewModel)
+            }
         }
     }
 }
