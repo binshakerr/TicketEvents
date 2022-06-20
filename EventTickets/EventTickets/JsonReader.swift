@@ -17,8 +17,8 @@ class JsonReader {
     private init() {}
     private let bundle = Bundle.main
     
-    func load<T: Decodable>(fileName: String) throws -> T {
-        guard let path = bundle.url(forResource: fileName, withExtension: nil) else {
+    func load<T: Decodable>(fileName: String, type: T.Type) throws -> T {
+        guard let path = bundle.url(forResource: fileName, withExtension: "json") else {
             throw IOError.pathNotFound
         }
         let data = try Data(contentsOf: path)
