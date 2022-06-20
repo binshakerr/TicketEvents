@@ -1,0 +1,62 @@
+[
+  {
+    "id": "001",
+    "city": "Berlin",
+    "artist": "DJ Khaled",
+    "price": 20
+  },
+  {
+    "id": "002",
+    "city": "New York",
+    "artist": "Eminem",
+    "price": 30
+  },
+  {
+    "id": "003",
+    "city": "Berlin",
+    "artist": "Taylor Swift",
+    "price": 15
+  },
+  {
+    "id": "004",
+    "city": "London",
+    "artist": "Drake",
+    "price": 35
+  },
+  {
+    "id": "005",
+    "city": "Berlin",
+    "artist": "Bruno Mars",
+    "price": 27
+  },
+  {
+    "id": "006",
+    "city": "Montreal",
+    "artist": "Justin Bieber",
+    "price": 34
+  },
+  {
+    "id": "007",
+    "city": "Paris",
+    "artist": "Ed Sheeran",
+    "price": 19
+  },
+  {
+    "id": "008",
+    "city": "Miami",
+    "artist": "Bili Eilish",
+    "price": 25
+  },
+  {
+    "id": "009",
+    "city": "Berlin",
+    "artist": "Lady Gaga",
+    "price": 20
+  },
+  {
+    "id": "010",
+    "city": "Rome",
+    "artist": "Dua Lipa",
+    "price": 30
+  }
+]
