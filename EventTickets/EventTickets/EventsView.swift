@@ -13,16 +13,35 @@ struct EventsView: View {
     private let columns = [GridItem(.flexible(minimum: 80), spacing: 10, alignment: .leading)]
     
     var body: some View {
-        ScrollView {
-            LazyVGrid(columns: columns, alignment: .leading, spacing: 20) {
-                ForEach(viewModel.events, id: \.self) { event in
-                    EventCellView(event: event)
+        VStack {
+            
+            HStack {
+                VStack {
+                    TextField("City", text: $viewModel.cityFilter)
+                        .textFieldStyle(.roundedBorder)
+                    TextField("Price", text: $viewModel.priceFilter)
+                        .textFieldStyle(.roundedBorder)
+                        .keyboardType(.numberPad)
+                }
+                
+                Button {
+                    viewModel.filterEvents()
+                } label: {
+                    Text("Filter")
+                }
+            }
+            
+            ScrollView {
+                LazyVGrid(columns: columns, alignment: .leading, spacing: 20) {
+                    ForEach(viewModel.events, id: \.self) { event in
+                        EventCellView(event: event)
+                    }
                 }
             }
         }
         .padding()
         .navigationTitle("Events")
-        .onAppear{
+        .onAppear {
             viewModel.loadEvents()
         }
     }
